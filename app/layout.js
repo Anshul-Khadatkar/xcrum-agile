@@ -10,8 +10,11 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Xcrum",
+  title: "SprintX",
   description: "Agile Project Management Tool",
+  icons: {
+    icon: "/SprintXlarge.png",
+  },
 };
 
 export default function RootLayout({ children }) {
