@@ -6,10 +6,12 @@ import { PenBox } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import UserMenu from "@/components/user-menu";
 import { BackgroundBeams } from "@/components/ui/background-beams";
-// import { checkUser } from "@/lib/checkUser";
+import { checkUser } from "@/lib/checkuser";
+
 // import UserLoading from "@/components/user-loading";
 
-const Header = () => {
+const Header = async () => {
+  const user = await checkUser();
   return (
     <div className="w-full relative h-24 bg-black/5">
       <div className="absolute inset-0 overflow-hidden">
